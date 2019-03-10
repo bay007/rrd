@@ -7,9 +7,9 @@ bodyClass: page-team-list
 <div class="intro">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h1>Conoce el equipo</h1>
-        <p>
+      <div class="col-11">
+        <h1 class="teambackground">Conoce el equipo</h1>
+        <p class="teambackground">
           Our team of qualified accountants and financial consultants can help
           your business at any stage of it's growth.
         </p>
@@ -22,7 +22,7 @@ bodyClass: page-team-list
   <div class="row">
     {% for team in site.team %}
     <div class="col-12 col-md-6 mb-1">
-      <div class="team team-summary">
+      <div class="team team-summary teambackground">
         {% if team.image %}
         <div class="team-image">
           <img

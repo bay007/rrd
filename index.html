@@ -6,8 +6,8 @@ bodyClass: page-home
 
 <div class="intro pb-4">
   <div class="container">
-    <h1>RRD - Diseña tu mundo</h1>
-    <p>Ayudamos a nuestros clientes a materializar esas ideas millonarias, ¿Requieres un nuevo tipo de botella de jugo que produce tu empresa?, ¿Quieres rediseñar el Boeng447?, ¡Podemos hacer esto y más!</p>
+    <h1 class="homebackground">RRD - Diseña tu mundo</h1>
+    <p class="homebackground">Ayudamos a nuestros clientes a materializar esas ideas millonarias, ¿Requieres un nuevo tipo de botella de jugo que produce tu empresa?, ¿Quieres rediseñar el Boeng447?, ¡Podemos hacer esto y más!</p>
   </div>
 </div>
 
@@ -35,11 +35,11 @@ bodyClass: page-home
     {% for service in site.services %}
     <div class="col-12 col-md-4 mb-1">
       <div class="service service-summary">
-        <div class="service-content">
+        <div class="service-content homebackground">
           <h2 class="service-title">
             <a href="{{site.baseurl}}{{ service.url }}">{{ service.title }}</a>
           </h2>
-          {{ service.content | markdownify | strip_html | truncate: 100 }}
+          <div>{{ service.content | markdownify | strip_html | truncate: 100 }}</div>
         </div>
       </div>
     </div>

@@ -1,11 +1,19 @@
 .page-home {
-	background-image: url('../images/undraw_taking_notes_tjaf.svg');
+	background-image: url('../images/andrew-neel-218073-unsplash.jpg');
 	background-repeat: no-repeat;
-	background-size: 115%;
+	background-size: 100%;
 	background-position: 49px -40px;
 	@include media-breakpoint-up(sm) {
 		background-size: 90%;
 		background-position: 159px -40px;
+	}
+	.homebackground {
+		background: #eff;
+		border-radius: 5px;
+		-webkit-box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.31);
+		-moz-box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.31);
+		box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.31);
+		opacity: 0.96;
 	}
 	@include media-breakpoint-up(md) {
 		background-size: 70%;

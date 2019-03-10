@@ -8,8 +8,8 @@ bodyClass: page-services-list
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1>Servicios que crecen con su negocio.</h1>
-        <p>Nuestro negocio ayuda a decenas de clientes con sus necesidades de diseño de productos.</p>
+        <h1 class="servicesbackground">Servicios que crecen con su negocio.</h1>
+        <p class="servicesbackground">Nuestro negocio ayuda a decenas de clientes con sus necesidades de diseño de productos.</p>
       </div>
     </div>
   </div>
@@ -19,8 +19,8 @@ bodyClass: page-services-list
   <div class="row">
     {% for service in site.services %}
     <div class="col-12 col-md-4 mb-1">
-      <div class="service service-summary">
-        <div class="service-content">
+      <div class="service service-summary ">
+        <div class="service-content servicesbackground">
           <h2 class="service-title">
             <a href="{{site.baseurl}}{{ service.url }}">{{ service.title }}</a>
           </h2>

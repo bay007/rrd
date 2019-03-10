@@ -1,18 +1,27 @@
 .page-team-list {
-  background-image: url('../images/undraw_hang_out_h9ud.svg');
-  background-repeat: no-repeat;
-  background-size: 115%;
-  background-position: 49px -40px;
-  @include media-breakpoint-up(sm) {
-    background-size: 90%;
-    background-position: 159px -40px;
-  }
-  @include media-breakpoint-up(md) {
-    background-size: 85%;
-    background-position: 199px -80px;
-  }
-  @include media-breakpoint-up(lg) {
-    background-size: 60%;
-    background-position: 100% -110px;
-  }
+	background-image: url('../images/rawpixel-1054578-unsplash.jpg');
+	background-repeat: no-repeat;
+	background-size: 115%;
+	background-position: 49px -40px;
+	@include media-breakpoint-up(sm) {
+		background-size: 90%;
+		background-position: 159px -40px;
+	}
+	.teambackground {
+		padding: 6px;
+		background: #eff;
+		border-radius: 5px;
+		-webkit-box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.31);
+		-moz-box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.31);
+		box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.31);
+		opacity: 0.96;
+	}
+	@include media-breakpoint-up(md) {
+		background-size: 85%;
+		background-position: 199px -80px;
+	}
+	@include media-breakpoint-up(lg) {
+		background-size: 60%;
+		background-position: 100% -110px;
+	}
 }
