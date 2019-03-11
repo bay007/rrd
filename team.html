@@ -10,8 +10,7 @@ bodyClass: page-team-list
       <div class="col-11">
         <h1 class="teambackground">Conoce el equipo</h1>
         <p class="teambackground">
-          Our team of qualified accountants and financial consultants can help
-          your business at any stage of it's growth.
+         
         </p>
       </div>
     </div>
@@ -33,11 +32,14 @@ bodyClass: page-team-list
         </div>
         {% endif %}
         <div class="team-meta">
-          <h2 class="team-name">{{ team.title }}</h2>
-          <p class="team-description">{{ team.Jobtitle }}</p>
-          {% if team.Linkedinurl %}
-          <a target="_blank" href="{{ team.Linkedinurl }}">Linked In</a> 
+          <h2 class="team-name">{{ team.owner }}</h2>
+          <p class="team-description">{{ team.company }}</p>
+          
+          {% if team.web %}
+          <p><a target="_blank" href="{{ team.web }}">{{team.web}}</a> </p>
           {% endif %}
+          <p><a href="mailto:{{ team.email }}">{{ team.email }}</a></p>
+          <p><a href="tel:{{ team.cell }}">{{ team.cell }}</a></p>
         </div>
         <div class="team-content">{{ team.content }}</div>
       </div>
