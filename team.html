@@ -9,9 +9,6 @@ bodyClass: page-team-list
     <div class="row">
       <div class="col-11">
         <h1 class="teambackground">Conoce el equipo</h1>
-        <p class="teambackground">
-         
-        </p>
       </div>
     </div>
   </div>
@@ -24,17 +21,13 @@ bodyClass: page-team-list
       <div class="team team-summary teambackground">
         {% if team.image %}
         <div class="team-image">
-          <img
-            alt="{{ team.title }} logo"
-            class="img-fluid mb-2"
-            src="{{site.baseurl}}{{ team.image }}"
-          />
+          <img alt="{{ team.title }} logo" class="img-fluid mb-2" src="{{site.baseurl}}{{ team.image }}" />
         </div>
         {% endif %}
         <div class="team-meta">
           <h2 class="team-name">{{ team.owner }}</h2>
           <p class="team-description">{{ team.company }}</p>
-          
+
           {% if team.web %}
           <p><a target="_blank" href="{{ team.web }}">{{team.web}}</a> </p>
           {% endif %}

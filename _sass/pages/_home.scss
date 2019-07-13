@@ -15,6 +15,10 @@
 		box-shadow: 4px 6px 10px 0px rgba(128, 130, 167, 0.56);
 		opacity: 0.96;
 	}
+	.subtheme{
+		padding: 15px;
+		max-width: 80%;
+	}
 	@include media-breakpoint-up(md) {
 		background-size: 70%;
 		background-position: 100% -50px;
