@@ -10,9 +10,9 @@
 	.servicesbackground {
 		background: #ffffff;
 		border-radius: 5px;
-		-webkit-box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.31);
-		-moz-box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.31);
-		box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.31);
+		-webkit-box-shadow: 4px 6px 10px 0px rgba(128, 130, 167, 0.56);
+		-moz-box-shadow: 4px 6px 10px 0px rgba(128, 130, 167, 0.56);
+		box-shadow: 4px 6px 10px 0px rgba(128, 130, 167, 0.56);
 		opacity: 0.96;
 	}
 	@include media-breakpoint-up(md) {
